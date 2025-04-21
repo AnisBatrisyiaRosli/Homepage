@@ -1,0 +1,143 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@1,500&display=swap');
+
+*{
+    font-family: "Playfair Display", serif;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #fff;
+    font-family: "Playfair Display", serif;
+    background-image: url("../image/beige-tiles.webp");
+    margin: 0px;
+}
+/*** Layout ***/
+.container {
+    background-color: white;
+    display: grid; 
+    grid-gap: 1.5em; 
+    grid-template-columns: repeat(12, 1fr);
+    width: min(95%, 75em);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container > * {
+grid-column: span 12;
+}
+
+/*Desktop Layout */ 
+@media screen and (min-width: 40em) {
+.col-span-8{
+    grid-column: span 8;
+}
+.col-span-4{
+    grid-column: span 4;
+}
+}
+
+header {
+    text-align: left;
+    background-color: #c76969;
+    color: #fff;
+    padding: 30px 40px; 
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: clamp(32px, 4w, 48px);
+}
+
+h2 {
+    font-size: 36px;
+    }
+
+    h3 {
+        font-size: 24px;
+        }
+
+
+aside img {
+    width: 180px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 999px;
+    border: 6px solid #c76969;
+}
+
+.circle {
+    width: 180px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 999px;
+    border: 6px solid #c76969;
+}
+
+a:link, a:visited{
+    color:#cc9b9b;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#c76980;
+    text-decoration: underline;
+}
+
+#nav-menu li a {
+    color: blue;
+}
+
+/**** Navigation Using Flexbox ****/
+nav {
+    background-color: #ffcfcf;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0; 
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+nav li {
+    margin: 0 0.5rem;
+}
+nav a:link, nav a:visited {
+    color: black;
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 1rem;
+    display: block;
+    transition: ease-in-out 250ms;
+}
+nav a:hover {
+    background-color: #cc9b9b;
+    color: white;
+}
+
+
+
+/********* Components *********/ 
+.button:link, .button:visited {
+    color: black;
+    background-color: #c76969; 
+    text-align: center; 
+    text-decoration: none; 
+    padding: 1rem 1.75rem; 
+    border-radius: .5rem; 
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .15);
+    display: inline—block;
+    margin: 0 .25rem .25rem 0;
+    transition: background-color 0.5s ease;    
+ 
+}
+.button:hover {
+    background-color:#9b4747;
+}
