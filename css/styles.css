@@ -118,23 +118,24 @@ body {
   }
   .news-card {
     width: 300px;
-    min-height: 420px;
+    min-height: 400px;
     background: #ECBAE3;
     padding: 20px;
     border-radius: 30px;
     text-align: center;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   }
   
   .business-name {
-    margin-top: 16px;
-    background-color: #B59AD0;
-    padding: 10px 20px;
-    border-radius: 999px;
+    background-color: #B59DDB; 
+    padding: 12px 20px;
+    border-radius: 30px;
     font-weight: bold;
-    font-size: 1rem;
-    color: #1E0038;
-    display: inline-block;
+    margin-top: 30px;
   }
 
   .news-card img {
@@ -154,11 +155,12 @@ body {
   }
 
   /* Footer */
-  
+
 .footer {
     background-color: #C0A3BB;  
     color: black;  
     padding: 40px 20px;  
+    font-size: 15px;
   }
   
   .footer-content {
@@ -181,18 +183,26 @@ body {
     width: 40px;
     height: 40px;
     object-fit: contain;
+    align-items: center;
   }
 
   .footer-left, .footer-right {
-    flex: 1;  /* Makes both sections take equal space */
+    flex: 1;  
+    font-size: 15px;
   }
   
   .footer-left {
-    text-align: left;  /* Align text to the left */
-    position: absolute; 
+    text-align: left;  
+    font-size: 15px;
   }
   
   .footer-right {
-    text-align: right;  /* Align text to the right (if needed) */
+    text-align: right;  
+    font-size: 15px;
   }
 
+  footer h1 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 5px 0;
+  }
