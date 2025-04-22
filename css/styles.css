@@ -82,7 +82,7 @@ body {
     font-weight: 500;
     margin-bottom: 24px;
     line-height: 1.8;
-    max-width: 1000px; /* keeps line length readable */
+    max-width: 1000px; 
     margin-left: auto;
     margin-right: auto;
   }
@@ -93,12 +93,12 @@ body {
 .recent-work {
     padding: 60px 0;
     background-color: #5B2565;
-    text-align: center; /* makes inline-block children like h2 center */
+    text-align: center; 
   }
 
   .recent-work h2 {
     text-align: center;
-    margin: 0 auto 40px auto; /* centers the element itself */
+    margin: 0 auto 40px auto; 
     background-color: #D8AEE1;
     display: inline-block;
     padding: 10px 25px;
