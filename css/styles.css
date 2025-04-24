@@ -206,3 +206,8 @@ body {
     font-weight: normal;
     margin: 5px 0;
   }
+
+  .footer-tagline {
+    margin-left: 20px;
+    margin-top: 40px;
+  }
