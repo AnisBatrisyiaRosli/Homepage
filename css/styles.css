@@ -48,7 +48,7 @@ body {
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full screen height */
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +78,7 @@ body {
 
   .hero-description {
     background-color: #BC97D3;
-    padding: 60px 20px; /* top/bottom, left/right padding */
+    padding: 60px 20px; 
     width: 100%;
     text-align: center;
   }
@@ -93,7 +93,7 @@ body {
     margin-right: auto;
   }
 
-  /* services */
+  /* Services Section */
   
   .hero-text-services {
     position: absolute;
@@ -107,6 +107,7 @@ body {
   }
 
   /* Circle Images */
+
   .circle-row {
     display: grid;
   grid-template-columns: repeat(3, 1fr); 
@@ -120,9 +121,7 @@ body {
   .circle-item {
     text-align: center;
     color: white;
-    
 }
-
 
 .circle-item h3 {
     font-size: 2rem;
@@ -134,43 +133,93 @@ body {
 
 .circle-item img {
     width: 170px;
-  height: 170px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  margin-left: auto;   
-  margin-right: auto;  
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin-left: auto;   
+    margin-right: auto;  
 }
 
 /* Work Section */
 
-.hero-text-work {
-
-
+.hero-work {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #BC97D3;
 }
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 10px; /* spacing between images */
-    max-width: 1000px;
-    margin: 0 auto; /* center the whole grid */
-    padding: 20px;
+    grid-template-columns: repeat(2, 1fr); 
+    margin: 0 auto;
   }
   
   .photo-item {
-    aspect-ratio: 1 / 1; /* Make each photo-item a perfect square */
+    aspect-ratio: 1 / 1; 
     overflow: hidden;
   }
   
   .photo-item img {
     width: 100%;
   height: 100%;
-  object-fit: cover; /* Makes the image fill and crop nicely */
+  object-fit: cover; 
   display: block;
   }
 
+  /* Contact Us */
+
+  .contact-section {
+    padding: 40px;
+    background-color: #BC97D3;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .contact-form button {
+    padding: 12px;
+    background-color: #ECBAE3;
+    color: white;
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: rgb(80, 80, 170);
+  }
 
 /* recent work card */
 .recent-work {
