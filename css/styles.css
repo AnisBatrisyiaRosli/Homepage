@@ -92,7 +92,51 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* services */
   
+  .hero-text-services {
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    max-width: 700px;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+  }
+
+  /* Circle Images */
+  .circle-row {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-items: center; /* center items inside each grid cell */
+  }
+
+  .circle-item {
+    text-align: center;
+}
+
+
+.circle-item h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.circle-item img {
+    width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
 
 
 /* recent work card */
